@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/screens/on_boarding_screen/on_boarding_screen.dart';
 import 'package:test_app/screens/splash_screen/splash_screen.dart';
 
 void main() {
@@ -11,26 +12,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     
-      home:  SplashScreen(),
+     debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+class  TestApp extends StatelessWidget {
+  const TestApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Colors.white ,
-      body: Center(
-        child: Text('nextscrren',style: TextStyle(
-          color: Colors.white,
-          fontSize: 24,
-          fontWeight: FontWeight.bold  
-        ),),
-      ),
+   return MaterialApp(
+      routes: {
+         //static String id = "HomePage";
+        OnBoardScreen.id : (context) => OnBoardScreen(),
+      },
+      initialRoute:OnBoardScreen.id,
     );
   }
 }

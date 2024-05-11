@@ -1,6 +1,7 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:test_app/core/styles/app_colors.dart';
+import 'package:test_app/core/utils/app_assets.dart';
 import 'package:test_app/main.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -20,11 +21,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
 _navigatetohome()async{
   await Future.delayed(
-    Duration(milliseconds: 1500 ),
+    Duration(milliseconds: 5000 ),
     (){});
   Navigator.pushReplacement(
     context,
-   MaterialPageRoute(builder: (context)=> MyHomePage()
+   MaterialPageRoute(builder: (context)=> TestApp()
    )
    );
 }
@@ -32,21 +33,21 @@ _navigatetohome()async{
   Widget build(BuildContext context) 
   {
     return const Scaffold(
-      backgroundColor: defaultColor ,
+      backgroundColor: Colors.white,
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
               FontAwesomeIcons.lemon,
-              size: 22,
-              color: Colors.white,
+              size: 28,
+              color: defaultColor,
 
             ),
-            SizedBox(width: 5,),
+            SizedBox(width: 6,),
             Text('foost',style: TextStyle(
-          color: Colors.white,
-          fontSize: 25,
+          color:defaultColor,
+          fontSize: 30,
           fontWeight: FontWeight.bold  
         ),)
           ],
