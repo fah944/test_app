@@ -2,6 +2,7 @@ import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:test_app/core/utils/app_assets.dart';
 import 'package:test_app/core/widgets/text_button_widget.dart';
+import 'package:test_app/screens/home_screen/home_screen.dart';
 import '../../core/styles/app_colors.dart';
 
 class OnBoardScreen extends StatelessWidget {
@@ -50,7 +51,10 @@ class OnBoardScreen extends StatelessWidget {
               fontSize: 10,
                          ),),
             const SizedBox(height: 20,),
-           DefaultTextButton(text: 'Get Started', onPressed: (){})
+           DefaultTextButton(text: 'Get Started', onPressed: ()
+           {
+            Navigator.pushNamed(context,HomeScreen.id);
+           })
           ],),
           ),
         ],),

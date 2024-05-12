@@ -1,11 +1,12 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:test_app/core/styles/app_colors.dart';
-import 'package:test_app/core/utils/app_assets.dart';
 import 'package:test_app/main.dart';
+import 'package:test_app/screens/on_boarding_screen/on_boarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+   static String id = "SplashScreen";
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -25,7 +26,7 @@ _navigatetohome()async{
     (){});
   Navigator.pushReplacement(
     context,
-   MaterialPageRoute(builder: (context)=> TestApp()
+   MaterialPageRoute(builder: (context)=> OnBoardScreen()
    )
    );
 }
