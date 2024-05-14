@@ -1,7 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:test_app/core/styles/app_colors.dart';
-
 import 'icon_button_widget.dart';
 
 
@@ -16,9 +14,9 @@ class ProductItemWidget  extends StatelessWidget {
   final double widthOfImg;
   final String nameOfProduct;
   final String capacity;
-  
+   final void Function() onPressed;
 
-   ProductItemWidget ({super.key,required this.color, required this.image, required this.heightOfImg, required this.widthOfImg,required this.nameOfProduct,required this.capacity});
+   ProductItemWidget ({super.key,required this.color, required this.image, required this.heightOfImg, required this.widthOfImg,required this.nameOfProduct,required this.capacity,required this.onPressed});
 
   
   @override
@@ -72,7 +70,7 @@ class ProductItemWidget  extends StatelessWidget {
                 const Text('\$12',
                 ),
                 const Spacer(),
-                IconButtonWidget(iconData: Icons.add,),
+                IconButtonWidget(iconData: Icons.add,onPressed: onPressed,),
               ],
             ),
           ],
