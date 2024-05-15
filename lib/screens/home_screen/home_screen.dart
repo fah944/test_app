@@ -13,8 +13,7 @@ class HomeScreen extends StatelessWidget {
 
    @override
   Widget build(BuildContext context) {
-    return Scaffold(
-             body:BlocBuilder<AppCubit,AppStates>(
+    return BlocBuilder<AppCubit,AppStates>(
               builder: (context,state)
               {
                 var cubit = AppCubit.get(context);
@@ -35,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                 items: cubit.items,
                 ),);
               },
-             ),
+            
           );
        
   }

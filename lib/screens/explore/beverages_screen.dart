@@ -43,15 +43,16 @@ class BreveagesScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                     colorofBorder: Colors.grey[200],
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -69,6 +70,7 @@ class BreveagesScreen extends StatelessWidget {
                DefaultTextButton( text:'Add Item', onPressed: (){}),
                const Spacer(),
             ] );},),                     
+     
        ProductItemWidget(
         color: color1,
         image: AppAssets.coffee1, 
@@ -80,8 +82,10 @@ class BreveagesScreen extends StatelessWidget {
           showMBtmSheet(
             context: context,
             rows: [   
-              RowWithIconWidget( title: 'Add',iconBtnWidget:  IconButtonWidget(
+              RowWithIconWidget( title: 'Add',
+              iconBtnWidget:  IconButtonWidget(
                       iconData: Icons.close,
+                      colorofBorder: Colors.grey[200],
                        onPressed:(){
                        Navigator.pop(context);
                        },  
@@ -90,11 +94,11 @@ class BreveagesScreen extends StatelessWidget {
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -102,6 +106,7 @@ class BreveagesScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                      colorofBorder: Colors.grey[200],
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -111,7 +116,11 @@ class BreveagesScreen extends StatelessWidget {
 
                DefaultTextButton( text:'Add Item', onPressed: (){}),
                const Spacer(),
-            ] );}),
+            ],
+             );
+            }
+            ),
+      
         ProductItemWidget(
         color: color1,
         image: AppAssets.slushmango, 
@@ -130,15 +139,17 @@ class BreveagesScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                       colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -146,6 +157,8 @@ class BreveagesScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                      colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -173,15 +186,17 @@ class BreveagesScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                      colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -189,6 +204,8 @@ class BreveagesScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                      colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -217,15 +234,16 @@ class BreveagesScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                      colorofBorder: Colors.grey[200],
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -233,6 +251,8 @@ class BreveagesScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                    
+                     colorofBorder: Colors.grey[200],
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -243,6 +263,9 @@ class BreveagesScreen extends StatelessWidget {
                DefaultTextButton( text:'Add Item', onPressed: (){}),
                const Spacer(),
             ] );}),
+        
+        
+        
         ProductItemWidget(
         color: color1,
         image: AppAssets.cherryjuice2,
@@ -260,16 +283,18 @@ class BreveagesScreen extends StatelessWidget {
                        onPressed:(){
                        Navigator.pop(context);
                        },  
+                       colorofBorder: Colors.grey[200],
                       colorofContainer: Colors.grey[200],
+                       
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -277,6 +302,7 @@ class BreveagesScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                       colorofBorder: Colors.grey[200],
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),

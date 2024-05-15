@@ -8,6 +8,7 @@ import 'package:test_app/screens/explore/fruits_screen.dart';
 import 'package:test_app/screens/home_screen/home_screen.dart';
 import 'package:test_app/screens/splash_screen/splash_screen.dart';
 
+import '../../screens/cart/order_accepted.dart';
 import '../../screens/on_boarding_screen/on_boarding_screen.dart';
 
 abstract class AppRouter {
@@ -21,6 +22,7 @@ abstract class AppRouter {
     FastFoodScreen.id:(context) => const FastFoodScreen(),
     DssertScreen.id :(context) =>  const DssertScreen(),
     BreveagesScreen.id :(context) =>  const BreveagesScreen(),
+    OrderAccepted.id :(context) =>  const OrderAccepted(),
     
 
 

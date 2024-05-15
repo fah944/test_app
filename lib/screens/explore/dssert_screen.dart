@@ -43,15 +43,17 @@ class DssertScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                                           colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -59,6 +61,8 @@ class DssertScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                                           colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -72,6 +76,7 @@ class DssertScreen extends StatelessWidget {
        
         },
         ),
+        
         ProductItemWidget(
         color: color1,
         image: AppAssets.icecreamcake, 
@@ -88,16 +93,17 @@ class DssertScreen extends StatelessWidget {
                        onPressed:(){
                        Navigator.pop(context);
                        },  
-                      colorofContainer: Colors.grey[200],
+                      colorofContainer: Colors.grey[200],                     colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
@@ -105,6 +111,8 @@ class DssertScreen extends StatelessWidget {
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
                       colorofContainer: Colors.grey[200],
+                                           colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -133,22 +141,26 @@ class DssertScreen extends StatelessWidget {
                        Navigator.pop(context);
                        },  
                       colorofContainer: Colors.grey[200],
+                                           colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
                  iconBtnWidget:  IconButtonWidget(
                       iconData: Icons.arrow_forward_ios_outlined,
                        onPressed:(){},  
-                      colorofContainer: Colors.grey[200],
+                      colorofContainer: Colors.grey[200],                    
+                       colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),
@@ -177,23 +189,28 @@ class DssertScreen extends StatelessWidget {
                        onPressed:(){
                        Navigator.pop(context);
                        },  
-                      colorofContainer: Colors.grey[200],
+                      colorofContainer: Colors.grey[200],                    
+                      colorofBorder: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 25,
                      ),textColor:Colors.black87 ,textSize: 20,),
                const Divider(),
-               rowWithOutIcon(text: 'name'),
+               rowWithOutIcon(text: 'name',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'description'),
+               rowWithOutIcon(text: 'description',textSize: 16),
                const Divider(),
-               rowWithOutIcon(text: 'price'),
+               rowWithOutIcon(text: 'price',textSize: 16),
                const Divider(),
                RowWithIconWidget(
                  title: 'image',
                  iconBtnWidget:  IconButtonWidget(
                       iconData: Icons.arrow_forward_ios_outlined,
-                       onPressed:(){},  
+                       onPressed:(){},                      
+                        colorofBorder: Colors.grey[200],
+
                       colorofContainer: Colors.grey[200],
+
                       color: Colors.black87,
                       size: 14,
                      ),textColor:Colors.black45 ,textSize: 16,),

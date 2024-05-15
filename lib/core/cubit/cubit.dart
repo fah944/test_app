@@ -62,4 +62,25 @@ class AppCubit extends Cubit<AppStates>
     currentIndex = index;
     emit(AppChangeBottomNavState());
   }
+
+
+  int quantity = 1 ;
+  int sum = 2;
+ bool isAdd=true;
+ //IconData icon;
+  void changeQuantity({required bool isAdd,required int num,})
+  {
+    if(isAdd){
+      quantity += num;
+      sum = sum+2;
+      emit(IncrementQState());
+    }else{
+        quantity -= num;
+        if(sum != 0){ sum = sum-2;}
+        else {sum =0;
+        quantity=0;}
+
+        emit(ReduceQState());
+    }
+  }
 }

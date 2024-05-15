@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:test_app/core/widgets/text_widget.dart';
 import 'icon_button_widget.dart';
 
 
@@ -37,14 +38,8 @@ class ProductItemWidget  extends StatelessWidget {
             ),
              Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  nameOfProduct,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style:const TextStyle(
-                      color: Colors.black87, fontSize: 15.0, height: 1,fontWeight: FontWeight.w500),
-                ),
+              children: [  
+              DefaultTextWidget(text: nameOfProduct, textColor: Colors.black87, textSize: 15.0)
               ],
             ),
              const  SizedBox(
@@ -53,13 +48,8 @@ class ProductItemWidget  extends StatelessWidget {
              Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  capacity+', price',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style:const TextStyle(
-                      color: Colors.black38, fontSize: 10.0, height: 1,fontWeight: FontWeight.w500),
-                ),
+                 DefaultTextWidget(text: capacity+', price', textColor: Colors.black38, textSize: 10.0)
+
               ],
             ),
              const  SizedBox(

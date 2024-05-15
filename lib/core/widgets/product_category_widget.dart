@@ -1,11 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:test_app/core/widgets/text_widget.dart';
 
 
 
 class ProductCategoryItemWidget  extends StatelessWidget {
-
-
 
   Color color;
   final String image;
@@ -31,26 +30,26 @@ class ProductCategoryItemWidget  extends StatelessWidget {
               height: heightOfImg,
               fit: BoxFit.cover,
             ),
-             const  SizedBox(
+             const SizedBox(
               height: 24,
             ),
              Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                /*Text(
                   nameOfProduct,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style:const TextStyle(
                       color: Colors.black87, fontSize: 15.0, height: 1,fontWeight: FontWeight.w500),
-                ),
+                ),*/
+                DefaultTextWidget(text: nameOfProduct, textColor:  Colors.black87, textSize: 15.0,)
               ],
             ),
-        
           ],
         ),
       ),
-    );;
+    );
   }
 }
 

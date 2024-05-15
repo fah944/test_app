@@ -2,12 +2,12 @@
   import 'package:flutter/material.dart';
 
 class DividerWidget extends StatelessWidget {
-  const DividerWidget({super.key});
-
+  const DividerWidget({super.key,required this.num});
+final double num;
   @override
   Widget build(BuildContext context) {
     return Padding(
-  padding:const EdgeInsetsDirectional.only(start: 2.0),
+  padding: EdgeInsetsDirectional.only(start: num),///2
   child: Container(
     width:double.infinity,
     height:1.0,

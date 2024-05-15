@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:test_app/core/utils/app_assets.dart';
 import 'package:test_app/core/widgets/text_button_widget.dart';
 import 'package:test_app/screens/home_screen/home_screen.dart';
-import '../../core/styles/app_colors.dart';
 
 class OnBoardScreen extends StatelessWidget {
    static String id = "OnBoardScreen";
@@ -24,7 +23,7 @@ class OnBoardScreen extends StatelessWidget {
       // alignment: Alignment.center,
    ),
           Container(
-            padding:const EdgeInsetsDirectional.only(bottom: 60),
+            padding:const EdgeInsetsDirectional.only(bottom: 80),
             child:  Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -54,7 +53,8 @@ class OnBoardScreen extends StatelessWidget {
            DefaultTextButton(text: 'Get Started', onPressed: ()
            {
             Navigator.pushNamed(context,HomeScreen.id);
-           })
+           }),
+           
           ],),
           ),
         ],),
